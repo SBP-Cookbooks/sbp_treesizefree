@@ -3,6 +3,11 @@ sbp_treesizefree Cookbook
 This cookbook will download and put treesizefree-utility in the defined working dir
 
 
+Requirements
+------------
+The cookbook depends on the windows cookbook
+
+
 Attributes
 ----------
 default['treesizefree']['url']          = 'http://www.jam-software.de/treesize_free/TreeSizeFreeSetup.zip'
