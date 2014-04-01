@@ -19,6 +19,7 @@
 
 windows_zipfile node['treesizefree']['install_dir'] do
 	source node['treesizefree']['url']
+  checksum node['treesizefree']['checksum']
  	action :unzip
   not_if { File.exists?("#{node['treesizefree']['install_dir']}/TreeSizeFree.exe") }
 end

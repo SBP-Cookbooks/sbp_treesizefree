@@ -18,4 +18,5 @@
 #
 
 default['treesizefree']['url']          = 'http://www.jam-software.de/treesize_free/TreeSizeFree.zip'
+default['treesizefree']['checksum']     = '995cef2eb2f511a21cb25e95d5e0b3eaab2da2fc9d5946b7fd8dace4034a9051'
 default['treesizefree']['install_dir']  = 'C:\Program Files\TreeSizeFree'
