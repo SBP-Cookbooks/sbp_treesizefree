@@ -24,7 +24,7 @@ windows_zipfile node['treesizefree']['install_dir'] do
   not_if { File.exists?("#{node['treesizefree']['install_dir']}/TreeSizeFree.exe") }
 end
 
-if node['treesizefree']['shortcuts'] == 'true'
+if node['treesizefree']['shortcut'] == true
 	require 'win32ole'
 	all_users_desktop = WIN32OLE.new("WScript.Shell").SpecialFolders("AllUsersDesktop")
 
