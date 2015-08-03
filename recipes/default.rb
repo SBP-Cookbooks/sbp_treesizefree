@@ -24,3 +24,13 @@ windows_zipfile node['treesizefree']['install_dir'] do
   not_if { File.exists?("#{node['treesizefree']['install_dir']}/TreeSizeFree.exe") }
 end
 
+if node['treesizefree']['shortcuts'] == 'true'
+	require 'win32ole'
+	all_users_desktop = WIN32OLE.new("WScript.Shell").SpecialFolders("AllUsersDesktop")
+
+	windows_shortcut "#{all_users_desktop}/TreeSizeFree.lnk" do
+		target "C:\\Program Files\\TreeSizeFree\\TreeSizeFree.exe"
+		description "Launch TreeSize Free"
+		iconlocation "C:\\Program Files\\TreeSizeFree\\TreeSizeFree.exe, 0"
+	end
+end
