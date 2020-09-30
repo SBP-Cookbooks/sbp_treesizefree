@@ -5,6 +5,6 @@
 # Copyright 2013, Schuberg Philis
 #
 
-default['treesizefree']['url']          = 'http://www.jam-software.de/treesize_free/TreeSizeFree.zip'
-default['treesizefree']['checksum']     = '662e00ef4f86d7c2a84dd1067ba7a8c5251176a14b533d4a4d8f746c88765cbc'
+default['treesizefree']['url']          = 'https://downloads.jam-software.de/treesize_free/TreeSizeFree-Portable.zip'
+default['treesizefree']['checksum']     = 'DEE01660B32073709A74ED6241FD3454053B68EE046AFC8CC413319D906B3CDB'
 default['treesizefree']['install_dir']  = 'C:\Program Files\TreeSizeFree'
