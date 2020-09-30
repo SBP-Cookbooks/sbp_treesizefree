@@ -8,4 +8,3 @@ chef_version     '>= 14.0'
 
 supports         'windows'
 
-depends          'windows'
