@@ -1,8 +1,8 @@
 #
-# Cookbook Name:: sbp_treesizefree
+# Cookbook:: sbp_treesizefree
 # Recipe:: default
 #
-# Copyright 2014, Schuberg Philis
+# Copyright:: 2014, Schuberg Philis
 #
 
 unless File.exist?("#{node['treesizefree']['install_dir']}/TreeSizeFree.exe")
