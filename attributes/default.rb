@@ -1,8 +1,8 @@
 #
-# Cookbook Name:: sbp_treesizefree
+# Cookbook:: sbp_treesizefree
 # Attribute:: default
 #
-# Copyright 2013, Schuberg Philis
+# Copyright:: 2013, Schuberg Philis
 #
 
 default['treesizefree']['url']          = 'https://downloads.jam-software.de/treesize_free/TreeSizeFree-Portable.zip'
